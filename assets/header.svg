@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Zzzsy01 — Build, Explore, Verify</title>
+  <desc id="desc">A neon gradient banner for the GitHub profile of Zzzsy01.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#09051f"/>
+      <stop offset="0.46" stop-color="#17113b"/>
+      <stop offset="1" stop-color="#071827"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f472b6"/>
+      <stop offset="0.35" stop-color="#a78bfa"/>
+      <stop offset="0.68" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#a855f7" stop-opacity=".62"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
+      <path d="M38 0H0V38" fill="none" stroke="#67e8f9" stroke-opacity=".09"/>
+    </pattern>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="320" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="28" fill="url(#grid)"/>
+  <circle cx="1040" cy="85" r="185" fill="url(#glow)">
+    <animate attributeName="r" values="165;205;165" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="110" cy="265" r="130" fill="url(#glow)" opacity=".55">
+    <animate attributeName="opacity" values=".3;.7;.3" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <path d="M0 256 C210 188 324 320 535 247 S880 177 1200 255" fill="none" stroke="url(#neon)" stroke-width="4" stroke-dasharray="12 16" opacity=".8">
+    <animate attributeName="stroke-dashoffset" from="0" to="-112" dur="5s" repeatCount="indefinite"/>
+  </path>
+
+  <g fill="#ffffff">
+    <circle cx="990" cy="58" r="3"><animate attributeName="opacity" values=".15;1;.15" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="1090" cy="145" r="4"><animate attributeName="opacity" values="1;.2;1" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="930" cy="196" r="2.5"><animate attributeName="opacity" values=".2;1;.2" dur="1.9s" repeatCount="indefinite"/></circle>
+    <circle cx="160" cy="52" r="2.5"><animate attributeName="opacity" values="1;.25;1" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="67" cy="152" r="3.5"><animate attributeName="opacity" values=".2;1;.2" dur="3.5s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <text x="74" y="125" font-family="Segoe UI, Arial, sans-serif" font-size="78" font-weight="800" fill="url(#neon)" filter="url(#softGlow)">Zzzsy01</text>
+  <text x="79" y="174" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" letter-spacing="7" fill="#e9d5ff">BUILD  /  EXPLORE  /  VERIFY</text>
+  <text x="81" y="216" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#bae6fd">Robotics · Embedded · Agent · Power · Full Stack</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+    <g transform="translate(760 74)"><rect width="112" height="36" rx="18" fill="#7c3aed"/><text x="56" y="24" fill="#fff">AGENT</text></g>
+    <g transform="translate(888 74)"><rect width="112" height="36" rx="18" fill="#0891b2"/><text x="56" y="24" fill="#fff">ROS 2</text></g>
+    <g transform="translate(1016 74)"><rect width="112" height="36" rx="18" fill="#d97706"/><text x="56" y="24" fill="#fff">POWER</text></g>
+    <g transform="translate(760 126)"><rect width="112" height="36" rx="18" fill="#dc2626"/><text x="56" y="24" fill="#fff">JAVA</text></g>
+    <g transform="translate(888 126)"><rect width="112" height="36" rx="18" fill="#db2777"/><text x="56" y="24" fill="#fff">FRONTEND</text></g>
+    <g transform="translate(1016 126)"><rect width="112" height="36" rx="18" fill="#059669"/><text x="56" y="24" fill="#fff">BACKEND</text></g>
+  </g>
+
+  <rect x="1.5" y="1.5" width="1197" height="317" rx="26.5" fill="none" stroke="url(#neon)" stroke-width="3" opacity=".8"/>
+</svg>

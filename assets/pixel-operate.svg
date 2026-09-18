@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" role="img" aria-label="Pixel observability and operations pipeline" shape-rendering="crispEdges">
+  <defs><linearGradient id="b" x2="1"><stop stop-color="#041513"/><stop offset="1" stop-color="#11102b"/></linearGradient><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#34d399" stroke-opacity=".07"/></pattern></defs>
+  <rect width="1200" height="180" rx="16" fill="url(#b)"/><rect width="1200" height="180" rx="16" fill="url(#g)"/>
+  <g font-family="Consolas,monospace"><text x="34" y="36" fill="#6ee7b7" font-size="15" font-weight="700">STAGE 04 // OPERATE WITH EVIDENCE</text><text x="34" y="62" fill="#94a3b8" font-size="12">TRACE + METRIC + LOG + REPLAY → INCIDENT → ROOT CAUSE → FIX → REGRESSION GATE</text></g>
+  <g transform="translate(54 88)" fill="#34d399"><rect y="50" width="20" height="18"/><rect x="28" y="36" width="20" height="32"/><rect x="56" y="18" width="20" height="50"/><rect x="84" y="30" width="20" height="38"/><rect x="112" width="20" height="68"/><animate attributeName="opacity" values=".35;1;.35" dur="1.4s" repeatCount="indefinite"/></g>
+  <g transform="translate(250 84)" font-family="Consolas,monospace" font-size="12" font-weight="700" text-anchor="middle">
+    <g><rect width="154" height="62" rx="8" fill="#052e2b" stroke="#2dd4bf"/><text x="77" y="37" fill="#fff">TELEMETRY</text></g>
+    <g transform="translate(190)"><rect width="154" height="62" rx="8" fill="#172554" stroke="#60a5fa"/><text x="77" y="37" fill="#fff">CORRELATE</text></g>
+    <g transform="translate(380)"><rect width="154" height="62" rx="8" fill="#3f1d2e" stroke="#fb7185"/><text x="77" y="37" fill="#fff">INCIDENT</text></g>
+    <g transform="translate(570)"><rect width="154" height="62" rx="8" fill="#451a03" stroke="#f59e0b"/><text x="77" y="37" fill="#fff">ROOT CAUSE</text></g>
+    <g transform="translate(760)"><rect width="154" height="62" rx="8" fill="#2e1065" stroke="#c084fc"/><text x="77" y="37" fill="#fff">REGRESSION</text></g>
+  </g>
+  <g fill="#fff"><circle r="4"><animateMotion dur="2.6s" repeatCount="indefinite" path="M404 115H440"/></circle><circle r="4"><animateMotion dur="2.6s" begin=".5s" repeatCount="indefinite" path="M594 115H630"/></circle><circle r="4"><animateMotion dur="2.6s" begin="1s" repeatCount="indefinite" path="M784 115H820"/></circle><circle r="4"><animateMotion dur="2.6s" begin="1.5s" repeatCount="indefinite" path="M974 115H1010"/></circle></g>
+  <rect x="1" y="1" width="1198" height="178" rx="15" fill="none" stroke="#34d399" stroke-opacity=".75" stroke-width="2"/>
+</svg>

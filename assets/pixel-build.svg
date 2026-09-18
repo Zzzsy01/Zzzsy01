@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" role="img" aria-label="Pixel engineering build pipeline" shape-rendering="crispEdges">
+  <defs><linearGradient id="b" x2="1"><stop stop-color="#1c1005"/><stop offset="1" stop-color="#071e24"/></linearGradient><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#f59e0b" stroke-opacity=".065"/></pattern></defs>
+  <rect width="1200" height="180" rx="16" fill="url(#b)"/><rect width="1200" height="180" rx="16" fill="url(#g)"/>
+  <g font-family="Consolas,monospace"><text x="34" y="36" fill="#fbbf24" font-size="15" font-weight="700">STAGE 03 // BUILD ACROSS THE STACK</text><text x="34" y="62" fill="#94a3b8" font-size="12">SCHEMATIC → FIRMWARE → MIDDLEWARE → SERVICE → INTERFACE → INTEGRATION TEST</text></g>
+  <g transform="translate(46 90)" fill="none" stroke="#f59e0b" stroke-width="10"><path d="M20 62V26H54V6H92V42"/><rect x="82" y="38" width="26" height="20" fill="#f59e0b"/><animateTransform attributeName="transform" type="translate" values="46 90;46 82;46 90" dur="2.2s" repeatCount="indefinite"/></g>
+  <g transform="translate(210 92)" font-family="Consolas,monospace" font-size="11" font-weight="700">
+    <g><rect width="142" height="54" rx="6" fill="#451a03" stroke="#f59e0b"/><text x="14" y="22" fill="#fde68a">PCB / FPGA</text><text x="14" y="41" fill="#fff">electrons</text></g>
+    <g transform="translate(168)"><rect width="142" height="54" rx="6" fill="#052e2b" stroke="#2dd4bf"/><text x="14" y="22" fill="#99f6e4">RTOS / C++</text><text x="14" y="41" fill="#fff">edge</text></g>
+    <g transform="translate(336)"><rect width="142" height="54" rx="6" fill="#172554" stroke="#60a5fa"/><text x="14" y="22" fill="#bfdbfe">ROS 2</text><text x="14" y="41" fill="#fff">robotics</text></g>
+    <g transform="translate(504)"><rect width="142" height="54" rx="6" fill="#2e1065" stroke="#c084fc"/><text x="14" y="22" fill="#e9d5ff">AGENT / API</text><text x="14" y="41" fill="#fff">intelligence</text></g>
+    <g transform="translate(672)"><rect width="142" height="54" rx="6" fill="#3b071f" stroke="#f472b6"/><text x="14" y="22" fill="#fbcfe8">3D UI</text><text x="14" y="41" fill="#fff">experience</text></g>
+    <g transform="translate(840)"><rect width="142" height="54" rx="6" fill="#052e16" stroke="#4ade80"/><text x="14" y="22" fill="#bbf7d0">EVIDENCE</text><text x="14" y="41" fill="#fff">verified</text></g>
+  </g>
+  <g fill="#fff"><rect y="118" width="8" height="8"><animate attributeName="x" values="352;378" dur=".7s" repeatCount="indefinite"/></rect><rect y="118" width="8" height="8"><animate attributeName="x" values="520;546" dur=".7s" begin=".2s" repeatCount="indefinite"/></rect><rect y="118" width="8" height="8"><animate attributeName="x" values="688;714" dur=".7s" begin=".4s" repeatCount="indefinite"/></rect><rect y="118" width="8" height="8"><animate attributeName="x" values="856;882" dur=".7s" begin=".6s" repeatCount="indefinite"/></rect></g>
+  <rect x="1" y="1" width="1198" height="178" rx="15" fill="none" stroke="#f59e0b" stroke-opacity=".75" stroke-width="2"/>
+</svg>

@@ -1,64 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
-  <title id="title">Zzzsy01 — Build, Explore, Verify</title>
-  <desc id="desc">A neon gradient banner for the GitHub profile of Zzzsy01.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision">
+  <title id="title">Zzzsy01 Cybernetic Systems Lab</title>
+  <desc id="desc">Dense neon terminal banner with an animated pixel spacecraft, system status panels, and multilingual engineering manifesto.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#09051f"/>
-      <stop offset="0.46" stop-color="#17113b"/>
-      <stop offset="1" stop-color="#071827"/>
-    </linearGradient>
-    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#f472b6"/>
-      <stop offset="0.35" stop-color="#a78bfa"/>
-      <stop offset="0.68" stop-color="#22d3ee"/>
-      <stop offset="1" stop-color="#34d399"/>
-    </linearGradient>
-    <radialGradient id="glow">
-      <stop offset="0" stop-color="#a855f7" stop-opacity=".62"/>
-      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
-      <path d="M38 0H0V38" fill="none" stroke="#67e8f9" stroke-opacity=".09"/>
-    </pattern>
-    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#030712"/><stop offset=".48" stop-color="#11113a"/><stop offset="1" stop-color="#03202d"/></linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#f472b6"/><stop offset=".34" stop-color="#a78bfa"/><stop offset=".67" stop-color="#22d3ee"/><stop offset="1" stop-color="#34d399"/></linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#67e8f9" stroke-opacity=".075"/></pattern>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><path d="M0 3.5H4" stroke="#fff" stroke-opacity=".025"/></pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
+  <rect width="1200" height="420" rx="22" fill="url(#bg)"/>
+  <rect width="1200" height="420" rx="22" fill="url(#grid)"/>
+  <rect width="1200" height="420" rx="22" fill="url(#scan)"/>
 
-  <rect width="1200" height="320" rx="28" fill="url(#bg)"/>
-  <rect width="1200" height="320" rx="28" fill="url(#grid)"/>
-  <circle cx="1040" cy="85" r="185" fill="url(#glow)">
-    <animate attributeName="r" values="165;205;165" dur="6s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="110" cy="265" r="130" fill="url(#glow)" opacity=".55">
-    <animate attributeName="opacity" values=".3;.7;.3" dur="5s" repeatCount="indefinite"/>
-  </circle>
-
-  <path d="M0 256 C210 188 324 320 535 247 S880 177 1200 255" fill="none" stroke="url(#neon)" stroke-width="4" stroke-dasharray="12 16" opacity=".8">
-    <animate attributeName="stroke-dashoffset" from="0" to="-112" dur="5s" repeatCount="indefinite"/>
-  </path>
-
-  <g fill="#ffffff">
-    <circle cx="990" cy="58" r="3"><animate attributeName="opacity" values=".15;1;.15" dur="2.4s" repeatCount="indefinite"/></circle>
-    <circle cx="1090" cy="145" r="4"><animate attributeName="opacity" values="1;.2;1" dur="3.1s" repeatCount="indefinite"/></circle>
-    <circle cx="930" cy="196" r="2.5"><animate attributeName="opacity" values=".2;1;.2" dur="1.9s" repeatCount="indefinite"/></circle>
-    <circle cx="160" cy="52" r="2.5"><animate attributeName="opacity" values="1;.25;1" dur="2.8s" repeatCount="indefinite"/></circle>
-    <circle cx="67" cy="152" r="3.5"><animate attributeName="opacity" values=".2;1;.2" dur="3.5s" repeatCount="indefinite"/></circle>
+  <g fill="#e0f2fe" shape-rendering="crispEdges">
+    <rect x="38" y="38" width="4" height="4"><animate attributeName="opacity" values=".15;1;.15" dur="2.1s" repeatCount="indefinite"/></rect>
+    <rect x="188" y="68" width="5" height="5"><animate attributeName="opacity" values="1;.15;1" dur="3.2s" repeatCount="indefinite"/></rect>
+    <rect x="620" y="48" width="4" height="4"><animate attributeName="opacity" values=".2;1;.2" dur="2.7s" repeatCount="indefinite"/></rect>
+    <rect x="1128" y="68" width="6" height="6"><animate attributeName="opacity" values="1;.15;1" dur="1.8s" repeatCount="indefinite"/></rect>
+    <rect x="1060" y="224" width="4" height="4"><animate attributeName="opacity" values=".2;1;.2" dur="2.4s" repeatCount="indefinite"/></rect>
   </g>
 
-  <text x="74" y="125" font-family="Segoe UI, Arial, sans-serif" font-size="78" font-weight="800" fill="url(#neon)" filter="url(#softGlow)">Zzzsy01</text>
-  <text x="79" y="174" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" letter-spacing="7" fill="#e9d5ff">BUILD  /  EXPLORE  /  VERIFY</text>
-  <text x="81" y="216" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#bae6fd">Robotics · Embedded · Agent · Power · Full Stack</text>
+  <g font-family="Consolas,Segoe UI,Arial,sans-serif">
+    <text x="58" y="64" font-size="15" font-weight="700" letter-spacing="4" fill="#67e8f9">SYSTEM://PROFILE/ZZZSY01</text>
+    <text x="55" y="140" font-size="66" font-weight="900" fill="url(#neon)" filter="url(#glow)">CYBERNETIC</text>
+    <text x="58" y="192" font-size="38" font-weight="800" letter-spacing="7" fill="#f8fafc">SYSTEMS LAB</text>
+    <text x="60" y="231" font-size="18" font-weight="700" fill="#a7f3d0">SENSE → REASON → ACT → OBSERVE → VERIFY</text>
+    <text x="60" y="260" font-size="14" fill="#c4b5fd">Robotics · Embedded AI · Power · Agents · Cloud · Interfaces</text>
 
-  <g font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle">
-    <g transform="translate(760 74)"><rect width="112" height="36" rx="18" fill="#7c3aed"/><text x="56" y="24" fill="#fff">AGENT</text></g>
-    <g transform="translate(888 74)"><rect width="112" height="36" rx="18" fill="#0891b2"/><text x="56" y="24" fill="#fff">ROS 2</text></g>
-    <g transform="translate(1016 74)"><rect width="112" height="36" rx="18" fill="#d97706"/><text x="56" y="24" fill="#fff">POWER</text></g>
-    <g transform="translate(760 126)"><rect width="112" height="36" rx="18" fill="#dc2626"/><text x="56" y="24" fill="#fff">JAVA</text></g>
-    <g transform="translate(888 126)"><rect width="112" height="36" rx="18" fill="#db2777"/><text x="56" y="24" fill="#fff">FRONTEND</text></g>
-    <g transform="translate(1016 126)"><rect width="112" height="36" rx="18" fill="#059669"/><text x="56" y="24" fill="#fff">BACKEND</text></g>
+    <g transform="translate(724 52)" font-size="13" font-weight="700">
+      <rect width="412" height="224" rx="16" fill="#030712" fill-opacity=".72" stroke="#22d3ee" stroke-opacity=".5"/>
+      <text x="24" y="31" fill="#67e8f9" letter-spacing="3">MISSION CONTROL // VISION MODE</text>
+      <g transform="translate(22 50)"><rect width="172" height="54" rx="8" fill="#7c3aed" fill-opacity=".3" stroke="#a78bfa"/><text x="14" y="23" fill="#ddd6fe">01 / PERCEPTION</text><text x="14" y="43" fill="#fff">SENSORS + VISION</text></g>
+      <g transform="translate(216 50)"><rect width="172" height="54" rx="8" fill="#0891b2" fill-opacity=".3" stroke="#22d3ee"/><text x="14" y="23" fill="#a5f3fc">02 / INTELLIGENCE</text><text x="14" y="43" fill="#fff">AGENTS + PLANNING</text></g>
+      <g transform="translate(22 120)"><rect width="172" height="54" rx="8" fill="#d97706" fill-opacity=".3" stroke="#f59e0b"/><text x="14" y="23" fill="#fde68a">03 / ACTUATION</text><text x="14" y="43" fill="#fff">ROBOTS + POWER</text></g>
+      <g transform="translate(216 120)"><rect width="172" height="54" rx="8" fill="#059669" fill-opacity=".3" stroke="#34d399"/><text x="14" y="23" fill="#a7f3d0">04 / ASSURANCE</text><text x="14" y="43" fill="#fff">EVALS + TELEMETRY</text></g>
+      <text x="22" y="205" fill="#94a3b8">STATUS</text><rect x="82" y="194" width="10" height="10" fill="#34d399"><animate attributeName="opacity" values="1;.2;1" dur="1.2s" repeatCount="indefinite"/></rect><text x="102" y="205" fill="#34d399">BUILDING THE ROADMAP</text>
+    </g>
   </g>
 
-  <rect x="1.5" y="1.5" width="1197" height="317" rx="26.5" fill="none" stroke="url(#neon)" stroke-width="3" opacity=".8"/>
+  <g transform="translate(26 292)" shape-rendering="crispEdges">
+    <path d="M0 82H1148" stroke="#22d3ee" stroke-opacity=".35" stroke-width="2"/>
+    <g fill="#0f172a" stroke="#334155"><rect x="0" y="28" width="70" height="54"/><rect x="82" y="10" width="80" height="72"/><rect x="174" y="36" width="48" height="46"/><rect x="234" y="18" width="92" height="64"/><rect x="338" y="42" width="60" height="40"/><rect x="410" y="4" width="82" height="78"/><rect x="504" y="30" width="54" height="52"/><rect x="570" y="14" width="98" height="68"/><rect x="680" y="38" width="68" height="44"/><rect x="760" y="20" width="80" height="62"/><rect x="852" y="32" width="58" height="50"/><rect x="922" y="8" width="94" height="74"/><rect x="1028" y="26" width="120" height="56"/></g>
+    <g fill="#22d3ee" opacity=".75"><rect x="98" y="24" width="8" height="8"/><rect x="122" y="24" width="8" height="8"/><rect x="430" y="22" width="8" height="8"/><rect x="454" y="22" width="8" height="8"/><rect x="790" y="36" width="8" height="8"/><rect x="944" y="26" width="8" height="8"/><rect x="970" y="26" width="8" height="8"/></g>
+  </g>
+
+  <g shape-rendering="crispEdges" filter="url(#glow)">
+    <g><animateTransform attributeName="transform" type="translate" values="-120 292;1230 292" dur="11s" repeatCount="indefinite"/>
+      <rect x="0" y="16" width="40" height="16" fill="#e879f9"/><rect x="12" y="4" width="28" height="12" fill="#67e8f9"/><rect x="40" y="20" width="16" height="8" fill="#f8fafc"/><rect x="-18" y="20" width="18" height="8" fill="#f59e0b"><animate attributeName="width" values="18;30;18" dur=".4s" repeatCount="indefinite"/></rect>
+    </g>
+  </g>
+
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="13" text-anchor="middle">
+    <rect x="32" y="380" width="1136" height="26" rx="13" fill="#020617" stroke="url(#neon)"/>
+    <text x="600" y="398" fill="#e2e8f0">构建可验证的智能系统 · BUILD VERIFIABLE INTELLIGENCE · 検証可能な知能を構築する · 검증 가능한 지능을 구축하다</text>
+  </g>
+  <rect x="1.5" y="1.5" width="1197" height="417" rx="20.5" fill="none" stroke="url(#neon)" stroke-width="3"/>
 </svg>

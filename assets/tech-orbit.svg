@@ -1,75 +1,86 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
-  <title id="title">Zzzsy01 technology orbit</title>
-  <desc id="desc">A neon constellation separating the current engineering core from future learning tracks.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Autonomous Systems Architecture Universe</title>
+  <desc id="desc">A dense cybernetic architecture map connecting hardware, perception, intelligence, cloud systems, observability, and interfaces.</desc>
   <defs>
-    <linearGradient id="space" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#060918"/>
-      <stop offset="0.5" stop-color="#140c32"/>
-      <stop offset="1" stop-color="#061c2d"/>
-    </linearGradient>
-    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#f472b6"/>
-      <stop offset="0.35" stop-color="#a78bfa"/>
-      <stop offset="0.68" stop-color="#22d3ee"/>
-      <stop offset="1" stop-color="#34d399"/>
-    </linearGradient>
-    <radialGradient id="core">
-      <stop offset="0" stop-color="#e879f9" stop-opacity=".88"/>
-      <stop offset="0.42" stop-color="#7c3aed" stop-opacity=".42"/>
-      <stop offset="1" stop-color="#111827" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
-      <path d="M42 0H0V42" fill="none" stroke="#67e8f9" stroke-opacity=".07"/>
-    </pattern>
-    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
-      <feGaussianBlur stdDeviation="5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#020617"/><stop offset=".5" stop-color="#0f0a2b"/><stop offset="1" stop-color="#03202a"/></linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#f472b6"/><stop offset=".35" stop-color="#a78bfa"/><stop offset=".68" stop-color="#22d3ee"/><stop offset="1" stop-color="#34d399"/></linearGradient>
+    <radialGradient id="core"><stop stop-color="#a855f7" stop-opacity=".65"/><stop offset=".55" stop-color="#0ea5e9" stop-opacity=".2"/><stop offset="1" stop-color="#020617" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#67e8f9" stroke-opacity=".065"/></pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#67e8f9"/></marker>
   </defs>
+  <rect width="1200" height="760" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="760" rx="24" fill="url(#grid)"/>
+  <circle cx="600" cy="392" r="250" fill="url(#core)"><animate attributeName="r" values="230;270;230" dur="8s" repeatCount="indefinite"/></circle>
 
-  <rect width="1200" height="520" rx="28" fill="url(#space)"/>
-  <rect width="1200" height="520" rx="28" fill="url(#grid)"/>
-  <circle cx="600" cy="270" r="174" fill="url(#core)">
-    <animate attributeName="r" values="160;188;160" dur="7s" repeatCount="indefinite"/>
-  </circle>
+  <g font-family="Consolas,Segoe UI,Arial,sans-serif">
+    <text x="48" y="52" fill="#67e8f9" font-size="14" font-weight="700" letter-spacing="4">ARCHITECTURE://AUTONOMOUS-SYSTEMS-UNIVERSE</text>
+    <text x="48" y="88" fill="#f8fafc" font-size="25" font-weight="800">FROM ELECTRONS TO INTELLIGENCE / 从电子到智能</text>
+    <text x="48" y="116" fill="#94a3b8" font-size="14">Reference architecture for future projects · 学習ロードマップ · 미래 시스템 설계도</text>
 
-  <g fill="none" stroke-linecap="round">
-    <ellipse cx="600" cy="270" rx="236" ry="118" stroke="#c084fc" stroke-opacity=".55" stroke-width="2" stroke-dasharray="8 12">
-      <animate attributeName="stroke-dashoffset" from="0" to="-80" dur="7s" repeatCount="indefinite"/>
-    </ellipse>
-    <ellipse cx="600" cy="270" rx="430" ry="196" stroke="#22d3ee" stroke-opacity=".35" stroke-width="2" stroke-dasharray="4 14">
-      <animate attributeName="stroke-dashoffset" from="0" to="90" dur="10s" repeatCount="indefinite"/>
-    </ellipse>
-    <path d="M180 95C386 28 781 35 1023 117" stroke="url(#beam)" stroke-width="3" opacity=".75"/>
-  </g>
-
-  <g font-family="Segoe UI,Arial,sans-serif" text-anchor="middle">
-    <text x="600" y="55" fill="#e9d5ff" font-size="18" font-weight="700" letter-spacing="5">TECH CONSTELLATION / VISION MAP</text>
-    <text x="600" y="245" fill="#ffffff" font-size="28" font-weight="800">CURRENT CORE</text>
-    <text x="600" y="279" fill="#bae6fd" font-size="17" font-weight="700">C / C++ · CMake · Linux · ROS</text>
-    <text x="600" y="307" fill="#6ee7b7" font-size="16">UAV · EMBEDDED · REAL-HARDWARE VERIFICATION</text>
-
-    <g font-size="14" font-weight="800" fill="#fff">
-      <g transform="translate(312 166)"><circle r="31" fill="#7c3aed" filter="url(#glow)"/><text y="5">AGENT</text></g>
-      <g transform="translate(888 166)"><circle r="31" fill="#0891b2" filter="url(#glow)"/><text y="5">ROS 2</text></g>
-      <g transform="translate(355 362)"><circle r="34" fill="#d97706" filter="url(#glow)"/><text y="5">POWER</text></g>
-      <g transform="translate(845 362)"><circle r="34" fill="#db2777" filter="url(#glow)"/><text y="5">VISION</text></g>
-
-      <g transform="translate(155 246)"><rect x="-57" y="-20" width="114" height="40" rx="20" fill="#0f766e"/><text y="5">EDGE AI</text></g>
-      <g transform="translate(240 420)"><rect x="-54" y="-20" width="108" height="40" rx="20" fill="#be123c"/><text y="5">JAVA</text></g>
-      <g transform="translate(475 464)"><rect x="-62" y="-20" width="124" height="40" rx="20" fill="#1d4ed8"/><text y="5">CLOUD</text></g>
-      <g transform="translate(725 464)"><rect x="-72" y="-20" width="144" height="40" rx="20" fill="#0e7490"/><text y="5">OBSERVE</text></g>
-      <g transform="translate(960 420)"><rect x="-54" y="-20" width="108" height="40" rx="20" fill="#b45309"/><text y="5">RUST</text></g>
-      <g transform="translate(1045 246)"><rect x="-58" y="-20" width="116" height="40" rx="20" fill="#9333ea"/><text y="5">3D UI</text></g>
+    <g transform="translate(40 150)" font-size="13">
+      <rect width="238" height="500" rx="16" fill="#071225" fill-opacity=".82" stroke="#f59e0b" stroke-opacity=".55"/>
+      <text x="18" y="31" fill="#fbbf24" font-size="16" font-weight="800">PHYSICAL PLANE</text>
+      <text x="18" y="52" fill="#64748b">現実世界 / 물리 계층</text>
+      <g transform="translate(16 76)"><rect width="206" height="66" rx="9" fill="#451a03" stroke="#f59e0b"/><text x="14" y="24" fill="#fde68a" font-weight="700">POWER &amp; ENERGY</text><text x="14" y="45" fill="#fff">DC-DC · Inverter · BMS · Motor</text></g>
+      <g transform="translate(16 158)"><rect width="206" height="66" rx="9" fill="#3f1d2e" stroke="#fb7185"/><text x="14" y="24" fill="#fecdd3" font-weight="700">ELECTRONICS</text><text x="14" y="45" fill="#fff">PCB · FPGA · RISC-V · Sensors</text></g>
+      <g transform="translate(16 240)"><rect width="206" height="66" rx="9" fill="#052e2b" stroke="#2dd4bf"/><text x="14" y="24" fill="#99f6e4" font-weight="700">EDGE COMPUTE</text><text x="14" y="45" fill="#fff">Zephyr · ESP-IDF · ExecuTorch</text></g>
+      <g transform="translate(16 322)"><rect width="206" height="66" rx="9" fill="#082f49" stroke="#38bdf8"/><text x="14" y="24" fill="#bae6fd" font-weight="700">ROBOT PLATFORM</text><text x="14" y="45" fill="#fff">UAV · UGV · Arm · Actuators</text></g>
+      <g transform="translate(16 404)"><rect width="206" height="66" rx="9" fill="#1e1b4b" stroke="#818cf8"/><text x="14" y="24" fill="#c7d2fe" font-weight="700">SIMULATION</text><text x="14" y="45" fill="#fff">Gazebo · Webots · CARLA</text></g>
     </g>
 
-    <g fill="#f8fafc">
-      <circle cx="218" cy="132" r="3"><animate attributeName="opacity" values=".2;1;.2" dur="2.4s" repeatCount="indefinite"/></circle>
-      <circle cx="1015" cy="332" r="4"><animate attributeName="opacity" values="1;.2;1" dur="3.1s" repeatCount="indefinite"/></circle>
-      <circle cx="113" cy="360" r="3"><animate attributeName="opacity" values=".2;1;.2" dur="1.8s" repeatCount="indefinite"/></circle>
-      <circle cx="1080" cy="125" r="3"><animate attributeName="opacity" values="1;.15;1" dur="2.7s" repeatCount="indefinite"/></circle>
+    <g transform="translate(922 150)" font-size="13">
+      <rect width="238" height="500" rx="16" fill="#071225" fill-opacity=".82" stroke="#22d3ee" stroke-opacity=".55"/>
+      <text x="18" y="31" fill="#67e8f9" font-size="16" font-weight="800">DIGITAL PLANE</text>
+      <text x="18" y="52" fill="#64748b">デジタル世界 / 디지털 계층</text>
+      <g transform="translate(16 76)"><rect width="206" height="66" rx="9" fill="#2e1065" stroke="#a78bfa"/><text x="14" y="24" fill="#ddd6fe" font-weight="700">AGENT RUNTIME</text><text x="14" y="45" fill="#fff">Tools · Memory · Handoff · Evals</text></g>
+      <g transform="translate(16 158)"><rect width="206" height="66" rx="9" fill="#172554" stroke="#60a5fa"/><text x="14" y="24" fill="#bfdbfe" font-weight="700">SERVICE MESH</text><text x="14" y="45" fill="#fff">Spring · FastAPI · NestJS</text></g>
+      <g transform="translate(16 240)"><rect width="206" height="66" rx="9" fill="#052e16" stroke="#4ade80"/><text x="14" y="24" fill="#bbf7d0" font-weight="700">DATA STREAM</text><text x="14" y="45" fill="#fff">Kafka · Flink · DuckDB · Twin</text></g>
+      <g transform="translate(16 322)"><rect width="206" height="66" rx="9" fill="#3b071f" stroke="#f472b6"/><text x="14" y="24" fill="#fbcfe8" font-weight="700">HUMAN INTERFACE</text><text x="14" y="45" fill="#fff">React · Three.js · ECharts</text></g>
+      <g transform="translate(16 404)"><rect width="206" height="66" rx="9" fill="#132a2a" stroke="#34d399"/><text x="14" y="24" fill="#a7f3d0" font-weight="700">ASSURANCE</text><text x="14" y="45" fill="#fff">OTel · Prometheus · Security</text></g>
+    </g>
+
+    <g transform="translate(336 168)">
+      <rect width="528" height="464" rx="28" fill="#050816" fill-opacity=".82" stroke="url(#beam)" stroke-width="2.5"/>
+      <text x="264" y="42" text-anchor="middle" fill="#e9d5ff" font-size="15" font-weight="800" letter-spacing="3">AUTONOMOUS SYSTEMS CORE</text>
+      <text x="264" y="67" text-anchor="middle" fill="#64748b" font-size="12">感知・推論・行動・検証 / 인지·추론·행동·검증</text>
+
+      <g transform="translate(264 234)" text-anchor="middle">
+        <polygon points="0,-104 90,-52 90,52 0,104 -90,52 -90,-52" fill="#11103b" stroke="#c084fc" stroke-width="3" filter="url(#glow)"/>
+        <text y="-16" fill="#fff" font-size="22" font-weight="900">MISSION</text>
+        <text y="11" fill="#fff" font-size="22" font-weight="900">INTELLIGENCE</text>
+        <text y="40" fill="#67e8f9" font-size="13" font-weight="700">STATE · PLAN · POLICY</text>
+      </g>
+
+      <g font-size="12" font-weight="800" text-anchor="middle">
+        <g transform="translate(76 120)"><circle r="38" fill="#6d28d9"/><text y="-3" fill="#fff">SENSE</text><text y="14" fill="#ddd6fe">Vision</text></g>
+        <g transform="translate(264 105)"><circle r="38" fill="#0e7490"/><text y="-3" fill="#fff">STATE</text><text y="14" fill="#cffafe">Fusion</text></g>
+        <g transform="translate(452 120)"><circle r="38" fill="#0369a1"/><text y="-3" fill="#fff">PLAN</text><text y="14" fill="#bae6fd">Policy</text></g>
+        <g transform="translate(76 348)"><circle r="38" fill="#b45309"/><text y="-3" fill="#fff">ACT</text><text y="14" fill="#fef3c7">Control</text></g>
+        <g transform="translate(264 365)"><circle r="38" fill="#be185d"/><text y="-3" fill="#fff">LEARN</text><text y="14" fill="#fce7f3">Evals</text></g>
+        <g transform="translate(452 348)"><circle r="38" fill="#047857"/><text y="-3" fill="#fff">OBSERVE</text><text y="14" fill="#d1fae5">Telemetry</text></g>
+      </g>
+
+      <g fill="none" stroke="#67e8f9" stroke-opacity=".55" stroke-width="2" marker-end="url(#arrow)">
+        <path d="M112 120C158 128 182 157 198 184"/><path d="M264 143V166"/><path d="M416 120C370 128 346 157 330 184"/>
+        <path d="M198 284C178 315 146 336 114 344"/><path d="M264 338V318"/><path d="M330 284C350 315 382 336 414 344"/>
+        <path d="M110 148C83 202 83 286 110 318"/><path d="M418 318C445 286 445 202 418 148"/>
+      </g>
+      <g fill="#f8fafc"><circle r="4"><animateMotion dur="3s" repeatCount="indefinite" path="M112 120C158 128 182 157 198 184"/></circle><circle r="4"><animateMotion dur="3.4s" repeatCount="indefinite" path="M330 284C350 315 382 336 414 344"/></circle><circle r="4"><animateMotion dur="4s" repeatCount="indefinite" path="M110 148C83 202 83 286 110 318"/></circle></g>
+    </g>
+
+    <g fill="none" stroke="#67e8f9" stroke-opacity=".45" stroke-width="2" stroke-dasharray="7 8">
+      <path d="M278 260H336"><animate attributeName="stroke-dashoffset" from="0" to="-60" dur="2s" repeatCount="indefinite"/></path>
+      <path d="M864 260H922"><animate attributeName="stroke-dashoffset" from="0" to="-60" dur="2s" repeatCount="indefinite"/></path>
+      <path d="M278 492H336"><animate attributeName="stroke-dashoffset" from="0" to="-60" dur="2.4s" repeatCount="indefinite"/></path>
+      <path d="M864 492H922"><animate attributeName="stroke-dashoffset" from="0" to="-60" dur="2.4s" repeatCount="indefinite"/></path>
+    </g>
+
+    <g transform="translate(40 674)" font-size="12" font-weight="700">
+      <rect width="1120" height="50" rx="12" fill="#020617" stroke="#334155"/>
+      <text x="20" y="21" fill="#64748b">SAFETY GATES</text><text x="20" y="39" fill="#fff">Simulation → SIL → HIL → Bench → Controlled Field → Real Mission</text>
+      <text x="1098" y="21" text-anchor="end" fill="#64748b">EVIDENCE PIPELINE</text><text x="1098" y="39" text-anchor="end" fill="#fff">Trace → Replay → Metric → Eval → Decision Record</text>
     </g>
   </g>
-
-  <rect x="1.5" y="1.5" width="1197" height="517" rx="26.5" fill="none" stroke="url(#beam)" stroke-width="3" opacity=".85"/>
+  <rect x="1.5" y="1.5" width="1197" height="757" rx="22.5" fill="none" stroke="url(#beam)" stroke-width="3"/>
 </svg>

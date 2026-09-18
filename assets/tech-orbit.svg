@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Zzzsy01 technology orbit</title>
+  <desc id="desc">A neon constellation separating the current engineering core from future learning tracks.</desc>
+  <defs>
+    <linearGradient id="space" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060918"/>
+      <stop offset="0.5" stop-color="#140c32"/>
+      <stop offset="1" stop-color="#061c2d"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f472b6"/>
+      <stop offset="0.35" stop-color="#a78bfa"/>
+      <stop offset="0.68" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <radialGradient id="core">
+      <stop offset="0" stop-color="#e879f9" stop-opacity=".88"/>
+      <stop offset="0.42" stop-color="#7c3aed" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#111827" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#67e8f9" stroke-opacity=".07"/>
+    </pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="520" rx="28" fill="url(#space)"/>
+  <rect width="1200" height="520" rx="28" fill="url(#grid)"/>
+  <circle cx="600" cy="270" r="174" fill="url(#core)">
+    <animate attributeName="r" values="160;188;160" dur="7s" repeatCount="indefinite"/>
+  </circle>
+
+  <g fill="none" stroke-linecap="round">
+    <ellipse cx="600" cy="270" rx="236" ry="118" stroke="#c084fc" stroke-opacity=".55" stroke-width="2" stroke-dasharray="8 12">
+      <animate attributeName="stroke-dashoffset" from="0" to="-80" dur="7s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="600" cy="270" rx="430" ry="196" stroke="#22d3ee" stroke-opacity=".35" stroke-width="2" stroke-dasharray="4 14">
+      <animate attributeName="stroke-dashoffset" from="0" to="90" dur="10s" repeatCount="indefinite"/>
+    </ellipse>
+    <path d="M180 95C386 28 781 35 1023 117" stroke="url(#beam)" stroke-width="3" opacity=".75"/>
+  </g>
+
+  <g font-family="Segoe UI,Arial,sans-serif" text-anchor="middle">
+    <text x="600" y="55" fill="#e9d5ff" font-size="18" font-weight="700" letter-spacing="5">TECH CONSTELLATION / VISION MAP</text>
+    <text x="600" y="245" fill="#ffffff" font-size="28" font-weight="800">CURRENT CORE</text>
+    <text x="600" y="279" fill="#bae6fd" font-size="17" font-weight="700">C / C++ · CMake · Linux · ROS</text>
+    <text x="600" y="307" fill="#6ee7b7" font-size="16">UAV · EMBEDDED · REAL-HARDWARE VERIFICATION</text>
+
+    <g font-size="14" font-weight="800" fill="#fff">
+      <g transform="translate(312 166)"><circle r="31" fill="#7c3aed" filter="url(#glow)"/><text y="5">AGENT</text></g>
+      <g transform="translate(888 166)"><circle r="31" fill="#0891b2" filter="url(#glow)"/><text y="5">ROS 2</text></g>
+      <g transform="translate(355 362)"><circle r="34" fill="#d97706" filter="url(#glow)"/><text y="5">POWER</text></g>
+      <g transform="translate(845 362)"><circle r="34" fill="#db2777" filter="url(#glow)"/><text y="5">VISION</text></g>
+
+      <g transform="translate(155 246)"><rect x="-57" y="-20" width="114" height="40" rx="20" fill="#0f766e"/><text y="5">EDGE AI</text></g>
+      <g transform="translate(240 420)"><rect x="-54" y="-20" width="108" height="40" rx="20" fill="#be123c"/><text y="5">JAVA</text></g>
+      <g transform="translate(475 464)"><rect x="-62" y="-20" width="124" height="40" rx="20" fill="#1d4ed8"/><text y="5">CLOUD</text></g>
+      <g transform="translate(725 464)"><rect x="-72" y="-20" width="144" height="40" rx="20" fill="#0e7490"/><text y="5">OBSERVE</text></g>
+      <g transform="translate(960 420)"><rect x="-54" y="-20" width="108" height="40" rx="20" fill="#b45309"/><text y="5">RUST</text></g>
+      <g transform="translate(1045 246)"><rect x="-58" y="-20" width="116" height="40" rx="20" fill="#9333ea"/><text y="5">3D UI</text></g>
+    </g>
+
+    <g fill="#f8fafc">
+      <circle cx="218" cy="132" r="3"><animate attributeName="opacity" values=".2;1;.2" dur="2.4s" repeatCount="indefinite"/></circle>
+      <circle cx="1015" cy="332" r="4"><animate attributeName="opacity" values="1;.2;1" dur="3.1s" repeatCount="indefinite"/></circle>
+      <circle cx="113" cy="360" r="3"><animate attributeName="opacity" values=".2;1;.2" dur="1.8s" repeatCount="indefinite"/></circle>
+      <circle cx="1080" cy="125" r="3"><animate attributeName="opacity" values="1;.15;1" dur="2.7s" repeatCount="indefinite"/></circle>
+    </g>
+  </g>
+
+  <rect x="1.5" y="1.5" width="1197" height="517" rx="26.5" fill="none" stroke="url(#beam)" stroke-width="3" opacity=".85"/>
+</svg>
